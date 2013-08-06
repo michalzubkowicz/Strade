@@ -156,7 +156,7 @@ class StradeHttp extends Strade
     public function send($to, $message)
     {
         $options = array_filter(get_object_vars($this));
-        $options["message"] = $message;
+        $options["message"] = ($this->messagetype=='unicode' && $this->charset=='UTF-8' ? strtoupper(bin2hex(iconv('UTF-8', 'UCS-2BE', $message))) : $message);
         $options["to"] = $to;
         $ch = curl_init();
         curl_setopt($ch, CURLOPT_URL, "https://gateway.smstrade.de");
