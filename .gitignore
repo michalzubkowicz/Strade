@@ -1,0 +1,6 @@
+*fuse*
+/nbproject/
+/.settings
+/.project
+*.kdev4
+/.idea/
