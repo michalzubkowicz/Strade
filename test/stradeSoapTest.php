@@ -1,6 +1,6 @@
 <?
 
-include('stradeTest.php');
+include('./stradeTest.php');
 
 class stradeSoapTest extends stradeTest {
 

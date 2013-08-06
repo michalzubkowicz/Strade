@@ -1,6 +1,6 @@
 <?
 
-include('stradeTest.php');
+include('./stradeTest.php');
 
 class stradeHttpTest extends stradeTest {
 
